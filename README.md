@@ -6,7 +6,11 @@
 
 [![Colab Notebook](https://img.shields.io/badge/Google_Colab-Notebook-orange?style=flat&logo=googlecolab)](https://colab.research.google.com/drive/1B-cStyriTOmnb8g1QD8eqmmaQATxIoPo) for web scraping
 
+[![Colab Notebook](https://img.shields.io/badge/Google_Colab-Notebook-orange?style=flat&logo=googlecolab)](https://colab.research.google.com/drive/1OoP_DLY4BKGO3i_16wjBfodK_msmrR9q) PDF Extractioni
+
 [![Colab Notebook](https://img.shields.io/badge/Google_Colab-Notebook-orange?style=flat&logo=googlecolab)](https://colab.research.google.com/drive/1ypw7U38NmmvOOX6EyAw5e-cj0nC-BCmW) for SQLalchemy
+
+[![Colab Notebook](https://img.shields.io/badge/Google_Colab-Notebook-orange?style=flat&logo=googlecolab)](https://colab.research.google.com/drive/1fATFkifeMqqv8-Ooq-iqDbgYAAmmx_Gi) S3 Cloud Storage
 
 ## Overview
 
@@ -21,8 +25,6 @@ This case study required us to create a robust data pipeline that would enable t
 - **Cloud Integration**: Ensure all data and extracted information are securely stored in AWS S3 buckets.
 
 ## Technologies Used
-
-
 
 [![AWS](https://img.shields.io/badge/AWS-411120?style=for-the-badge)](https://aws.amazon.com/)
 [![Snowflake](https://img.shields.io/badge/snowflake-0000FF?style=for-the-badge&logo=snowflake&logoColor=white)](https://docs.snowflake.com/ )
@@ -40,6 +42,44 @@ This case study required us to create a robust data pipeline that would enable t
 - Provided PDF files of finance-related materials
 
 ## Project Structure
+
+```
+Assignment-02s
+├── Diagrams
+│   ├── CFA.png
+│   ├── Data Architecture-02.ipynb
+│   └── data_scraping_architecture.png
+├── Notebooks
+│   ├── Step1
+│   │   ├── Webscraping.ipynb
+│   │   └── content.csv
+│   ├── Step2
+│   │   ├── Grobid_RR_2024_l1_combined.txt
+│   │   ├── Grobid_RR_2024_l1_combined_metadata.json
+│   │   ├── Grobid_RR_2024_l1_combined_metadata.xml
+│   │   ├── Grobid_RR_2024_l2_combined.txt
+│   │   ├── Grobid_RR_2024_l2_combined_metadata.json
+│   │   ├── Grobid_RR_2024_l2_combined_metadata.xml
+│   │   ├── Grobid_RR_2024_l3_combined.txt
+│   │   ├── Grobid_RR_2024_l3_combined_metadata.json
+│   │   ├── Grobid_RR_2024_l3_combined_metadata.xml
+│   │   ├── PDF_Parsing.py
+│   │   ├── PyPDF_RR_2024-l1_combined.txt
+│   │   ├── PyPDF_RR_2024-l2_combined.txt
+│   │   ├── PyPDF_RR_2024-l3_combined.txt
+│   │   └── metadata.csv
+│   ├── Step3
+│   │   ├── content.csv
+│   │   └── csv_upload_sqlalchemy.ipynb
+│   └── Step4
+│       ├── Upload_to_S3.py
+│       ├── metadata.csv
+│       ├── metadata_new.csv
+│       └── pdfmetadata_upload_sqlalchemy.ipynb
+├── README.md
+└── requirements.txt
+
+```
 
 
 
@@ -81,6 +121,6 @@ This case study required us to create a robust data pipeline that would enable t
 | ------------ | ------------- | ----------------------- |
 | Dongyu Liu   | 20%           | Web Scrapping           |
 | Ekta Bhatia  | 25%           | PDF Extraction          |
-| Parth Kalani | 25%           | S3 Cloud Storage        |
-| Sumit Sharma | 30%           | Snowflke Data uploading |
+| Parth Kalani | 30%           | Snowflke Data uploading |
+| Sumit Sharma | 25%           | S3 Cloud Storage        |
 
